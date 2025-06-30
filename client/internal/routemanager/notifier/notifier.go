@@ -31,6 +31,7 @@ func (n *Notifier) SetListener(listener listener.NetworkChangeListener) {
 
 func (n *Notifier) SetInitialClientRoutes(clientRoutes []*route.Route) {
 	nets := make([]string, 0)
+	// doing something
 	for _, r := range clientRoutes {
 		if r.IsDynamic() {
 			continue
